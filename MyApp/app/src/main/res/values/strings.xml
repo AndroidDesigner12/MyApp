@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_drawer">open</string>
+    <string name="close_drawer">close</string>
+
+    <string-array name="title">
+
+        <item>Settings</item>
+        <item>Log Out</item>
+
+    </string-array>
+</resources>

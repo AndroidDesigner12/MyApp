@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.william.myapp.main.MainActivity"
+    android:id="@+id/DrawerLayout"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/app_bar"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/TabLayoutID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+           app:tabIndicatorColor="@color/indicatorColor"
+            app:tabIndicatorHeight="2dp"
+            android:background="@color/colorPrimary">
+
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/Pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+        app:layout="@layout/fragment_nav__drawer"
+        android:name="com.example.william.myapp.NavigationDrawer.Nav_Drawer"
+        tools:layout="@layout/fragment_nav__drawer" />
+
+
+
+</android.support.v4.widget.DrawerLayout>
